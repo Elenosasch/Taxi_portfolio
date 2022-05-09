@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Такси</title>
+	<link rel="stylesheet" href="Taxi.css">
+	<link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,900&display=swap&subset=cyrillic" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header lock-padding">
+			<div class="header__container _container">
+				<div class="header__body">
+					<div class="header__title title-header">
+						<div class="title-header__sub-title">трансфер</div>
+						<div class="title-header__title">Симферополь</div>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li><a href="" class="header__link"><span>О нас</span></a></li>
+							<li><a href="" class="header__link"><span>Почему мы</span></a></li>
+							<li><a href="" class="header__link"><span>Тарифы</span></a></li>
+							<li><a href="" class="header__link"><span>Классы такси</span></a></li>
+							<li><a href="" class="header__link"><span>Отзывы</span></a></li>
+						</ul>
+						<div class="header__phone phone-header">
+							<div class="phone-header__text">бесплатно, круглосуточно</div>
+							<a href="tel:89787777272" class="phone-header__phone">+7 978 777 72 72</a>
+						</div>
+					</nav>
+					<div class="header__burger"><span></span></div>
+					<div class="header__phone phone-header">
+						<div class="phone-header__text">бесплатно, круглосуточно</div>
+						<a href="tel:89787777272" class="phone-header__phone">+7 978 777 72 72</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page lock-padding">
+			<section class="main-block">
+				<div class="main-block__bg ibg"><img src="../img/Main-block/01.jpg" alt=""></div>
+				<div class="main-block__content">
+					<div class="main-block__container _container">
+						<h1 class="main-block__title">Такси аэропорта <span>Симферополь</span></h1>
+						<div class="main-block__text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития</div>
+					</div>
+				</div>
+			</section>
+			<section class="order">
+				<div class="order__container _container">
+					<div class="order__content">
+						<div class="order__title">Заказать такси</div>
+						<div class="order__tabs order-tabs">
+							<div class="order-tabs__nav">
+								<button class="order-tabs__nav-btn" type="button" data-tab="#tab_1">
+									<div class="order-tabs-btn__num">1</div>
+									<div class="order-tabs-btn__text">Место назначения</div>
+									<div class="order-tabs-btn__step">Шаг 1</div>
+								</button>
+								<a href="" class="order-tabs__arrow"><img src="../img/Order/Arrow.png" alt=""></a>
+								<button class="order-tabs__nav-btn" type="button" data-tab="#tab_2">
+									<div class="order-tabs-btn__num">2</div>
+									<div class="order-tabs-btn__text">Контакты</div>
+									<div class="order-tabs-btn__step">Шаг 2</div>
+								</button>
+								<a href="" class="order-tabs__arrow"><img src="../img/Order/Arrow.png" alt=""></a>
+								<button class="order-tabs__nav-btn" type="button" data-tab="#tab_3">
+									<div class="order-tabs-btn__num">3</div>
+									<div class="order-tabs-btn__text">Дополнительно</div>
+									<div class="order-tabs-btn__step">Шаг 3</div>
+								</button>
+							</div>
+							<div class="order-tabs__content">
+								<div class="order-tabs__item item-tabs" id="tab_1">
+									<div class="item-tabs__content">
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Класс такси</div>
+											<select name="taxiclass" id="">
+												<option value="1">Выберите класс такси</option>
+												<option value="2">Стандарт</option>
+												<option value="3">Универсал</option>
+												<option value="4">Комфорт</option>
+												<option value="5">Бизнес</option>
+												<option value="6">Минивен</option>
+											</select>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Вид поездки</div>
+											<select name="" id="">
+												<option value="1">Выберите вид поездки</option>
+												<option value="2">Стандарт</option>
+												<option value="3">Универсал</option>
+												<option value="4">Комфорт</option>
+												<option value="5">Бизнес</option>
+												<option value="6">Минивен</option>
+											</select>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Место назначения</div>
+											<select name="place" id="">
+												<option value="1">Выберите или введите название</option>
+												<option value="2">Азовское</option>
+												<option value="3">Алушта</option>
+												<option value="4">Армянск</option>
+												<option value="5">Артек</option>
+												<option value="6">Байдарские ворота</option>
+												<option value="7">Рабочий уголок</option>
+											</select>
+										</div>
+									</div>
+									<div class="item-tabs__buttons">
+										<button class="order-tabs__nav-btn _btn" type="button" data-tab="#tab_2">Перейти к шагу 2</button>
+									</div>
+								</div>
+								<div class="order-tabs__item" id="tab_2">
+									<div class="item-tabs__content">
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Ваш телефон</div>
+											<form action="#">
+												<input type="tel" name="tel" id="tel" value="+7 (___) ___-__-__">
+											</form>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Ваше имя</div>
+											<form action="#">
+												<input type="text" name="firstname" placeholder="Введите Ваше имя">
+											</form>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Номер рейса</div>
+											<form action="#">
+												<input type="number" placeholder="Номер Вашего рейса">
+											</form>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Дата прибытия</div>
+											<form action="#">
+												<input type="text" name="date" placeholder="Дата подачи такси">
+											</form>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Время прибытия</div>
+											<form action="#">
+												<input type="text" name="time" value="__:__">
+											</form>
+										</div>
+									</div>
+									<div class="item-tabs__buttons">
+										<button class="order-tabs__nav-btn _btn _btn-w" type="button" data-tab="#tab_1">Вернуться к шагу 1</button>
+										<button class="order-tabs__nav-btn _btn" type="button" data-tab="#tab_3">Перейти к шагу 3</button>
+									</div>
+								</div>
+								<div class="order-tabs__item" id="tab_3">
+									<div class="item-tabs__content">
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Взрослые пассажиры</div>
+											<select name="" id="">
+												<option value="0">Количество взрослых</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">более 5</option>
+											</select>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Дети (младше 12 лет)</div>
+											<select name="" id="">
+												<option value="0">Количество детей</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">более 5</option>
+											</select>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Младенцы (младше 1 года)</div>
+											<select name="" id="">
+												<option value="0">Количество младенцев</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">более 5</option>
+											</select>
+										</div>
+										<div class="item-tabs__column column-tabs column-transfer">
+											<div class="column-tabs__title title-transfer">Обратный транфер</div>
+											<div><input checked type="checkbox" name="transfer" value="yes"></div>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Время подачи такси</div>
+											<form action="#">
+												<input type="text" name="time" value="__:__">
+											</form>
+										</div>
+										<div class="item-tabs__column column-tabs">
+											<div class="column-tabs__title">Комментарий к заказу</div>
+											<input type="text" name="text" value="">
+										</div>
+									</div>
+									<div class="item-tabs__buttons">
+										<button class="order-tabs__nav-btn _btn _btn-w" type="button" data-tab="#tab_2">Вернуться к шагу 2</button>
+										<a href="#popup" class="item-tabs__btn _btn popup-link">Заказать такси</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__container _container">
+					<div class="why__title-block title-block">
+						<div class="title-block__title">Почему выбирают нас?</div>
+						<div class="title-block__text">Преимущества нашего такси</div>
+						<div class="title-block__image"><img src="../img/Why/01.png" alt=""></div>
+					</div>
+					<div class="why__benefits">
+						<div class="why__items">
+							<div class="why__item item-why">
+								<div class="item-why__content">
+									<div class="item-why__icon"><img src="../img/Why/icons/01.png" alt=""></div>
+									<div class="item-why__title">Безопасность</div>
+									<div class="item-why__text">
+										<p>Автомобили проходят регулярный техосмотр и дезинфицируются после каждой поездки.</p>
+										<p>Также мы сторого соблюдаем правила перевозки маленьких поссажиров и абсолютно бесплатно предоставим детское атокресло или бустер</p>
+									</div>
+								</div>
+							</div>
+							<div class="why__item item-why">
+								<div class="item-why__content">
+									<div class="item-why__icon"><img src="../img/Why/icons/02.png" alt=""></div>
+									<div class="item-why__title">Без «бомбил»</div>
+									<div class="item-why__text">
+										<p>Только официальное трудоустройство — все наши водители с лицензией в такси и со стажем вождения по Крыму от 8 лет.</p>
+										<p>*Поездка проходит с соблюдением масочного режима</p>
+									</div>
+								</div>
+							</div>
+							<div class="why__item item-why">
+								<div class="item-why__content">
+									<div class="item-why__icon"><img src="../img/Why/icons/03.png" alt=""></div>
+									<div class="item-why__title">Скидка  до 50%</div>
+									<div class="item-why__text">
+										<p>Предоставим скидку на обратный трансфер до 50% от средней цены поездки. Просто заранее предупредите оператора, что вам понадобится машина обратно</p>
+									</div>
+								</div>
+							</div>
+							<div class="why__item item-why">
+								<div class="item-why__content">
+									<div class="item-why__icon"><img src="../img/Why/icons/04.png" alt=""></div>
+									<div class="item-why__title">Круглосуточный заказ такси</div>
+									<div class="item-why__text">
+										<p>Работаем 24/7 — оперативно подадим автомобиль в любое время суток. Ночные тарифы дополнительно не тарифициеруются и также доступны и недороги как дневные</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tariffs">
+				<div class="tariffs__container _container">
+					<h2 class="tariffs__title">Тарифы по направлениям</h2>
+					<div class="tariffs__text">Стоимость такси из Симферополя по Крыму</div>
+					<div class="tariffs__table table-tariffs">
+						<div class="table-tariffs__title title-table">
+							<div class="title-table__title">Направление</div>
+							<div class="title-table__items">
+								<div class="title-table__item">Стандарт</div>
+								<div class="title-table__item">Универсал</div>
+								<div class="title-table__item">Комфорт</div>
+								<div class="title-table__item">Бизнес</div>
+								<div class="title-table__item">Минивен</div>
+							</div>
+						</div>
+						<div class="table-tariffs__items">
+							<div class="table-tariffs__item item-table">
+								<div class="item-table__title">Симферополь — Азовское</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+							<div class="table-tariffs__item item-table item-table-w">
+								<div class="item-table__title">Симферополь — Алупка</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+							<div class="table-tariffs__item item-table">
+								<div class="item-table__title">Симферополь — Алушта</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+							<div class="table-tariffs__item item-table item-table-w">
+								<div class="item-table__title">Симферополь — Армянск</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+							<div class="table-tariffs__item item-table">
+								<div class="item-table__title">Симферополь — Артек</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+							<div class="table-tariffs__item item-table item-table-w">
+								<div class="item-table__title">Симферополь — Байдарские ворота</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+							<div class="table-tariffs__item item-table">
+								<div class="item-table__title">Симферополь — Рабочий уголок</div>
+								<div class="item-table__prices">
+									<div class="item-table__price">789 ₽</div>
+									<div class="item-table__price">1089 ₽</div>
+									<div class="item-table__price">1300 ₽</div>
+									<div class="item-table__price">1809 ₽</div>
+									<div class="item-table__price">2100 ₽</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="tariffs__btn _btn" type="button">Заказать такси</button>
+				</div>
+			</section>
+			<section class="text-block">
+				<div class="text-block__container _container">
+					<h2 class="text-block__title">Официальное такси аэропорта Симферополь</h2>
+					<div class="text-block__text">
+						<ul class="text-block__list">
+							<li>1<span> Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовке и реализации направлений прогрессивного развития.</span></li>
+							<li>2<span> Разнообразный и богатый опыт, постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</span></li>
+							<li>3<span> Товарищи! Начало повседневной работы по формированию позиции способствует подготовке и реализации форм развития. Идейные соображения высшего порядка, а также консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! Дальнейшее развитие различных форм деятельности требуют определения и уточнения систем массового участия.</span></li>
+						</ul>
+						<ul class="text-block__list-2">
+							<li><span>-</span> Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовке и реализации направлений прогрессивного развития.</li>
+							<li><span>-</span> Разнообразный и богатый опыт, постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</li>
+							<li><span>-</span> Товарищи! Начало повседневной работы по формированию позиции способствует подготовки и реализации форм развития. Идейные соображения высшего порядка, а также консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! Дальнейшее развитие различных форм деятельности требуют определения и уточнения систем массового участия.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="numbers">
+				<div class="numbers__container _container">
+					<h2 class="numbers__title">Наше такси в цифрах</h2>
+					<div class="numbers__text">Мы в цифрах</div>
+					<div class="numbers__items">
+						<div class="numbers__item item-numbers">
+							<div class="item-numbers__content">
+								<div class="item-numbers__number">3657</div>
+								<div class="item-numbers__text">Постоянных клиентов</div>
+							</div>
+						</div>
+						<div class="numbers__item item-numbers">
+							<div class="item-numbers__content">
+								<div class="item-numbers__number">6 лет</div>
+								<div class="item-numbers__text">Средний опыт водителей</div>
+							</div>
+						</div>
+						<div class="numbers__item item-numbers">
+							<div class="item-numbers__content">
+								<div class="item-numbers__number">175</div>
+								<div class="item-numbers__text">Авто в автопарке</div>
+							</div>
+						</div>
+						<div class="numbers__item item-numbers">
+							<div class="item-numbers__content">
+								<div class="item-numbers__number">10 лет</div>
+								<div class="item-numbers__text">Радуем вас качественным сервисом</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="classes">
+				<div class="classes__container _container">
+					<h2 class="classes__title">Классы такси</h2>
+					<div class="classes__text">Подадим машину за 30 минут</div>
+					<div class="classes__slider-block">
+						<div class="classes__slider">
+							<div class="classes-slider__body">
+								<div class="classes-slider__card card-slider">
+									<div class="card-slider__title">Стандарт</div>
+									<div class="card-slider__brands">VW Polo, Kia RIO</div>
+									<div class="card-slider__text">Имеет вместительный багажник.</div>
+									<div class="card-slider__image"><img src="../img/Classes/01.png" alt=""></div>
+									<button class="card-slider__btn _btn" type="button">Забронировать</button>
+								</div>
+							</div>
+							<div class="classes-slider__body">
+								<div class="classes-slider__card card-slider">
+									<div class="card-slider__title">Универсал</div>
+									<div class="card-slider__brands">
+										Lacetti, Octavia, Cruze, Passat
+									</div>
+									<div class="card-slider__text">Имеет вместительный багажник.</div>
+									<div class="card-slider__image"><img src="../img/Classes/02.png" alt=""></div>
+									<button class="card-slider__btn _btn" type="button">Забронировать</button>
+								</div>
+							</div>
+							<div class="classes-slider__body">
+								<div class="classes-slider__card card-slider">
+									<div class="card-slider__title">Комфорт</div>
+									<div class="card-slider__brands">
+										Skoda Octvia, Chevrolet Cruze
+									</div>
+									<div class="card-slider__text">Имеет вместительный багажник.</div>
+									<div class="card-slider__image"><img src="../img/Classes/03.png" alt=""></div>
+									<button class="card-slider__btn _btn" type="button">Забронировать</button>
+								</div>
+							</div>
+							<div class="classes-slider__body">
+								<div class="classes-slider__card card-slider">
+									<div class="card-slider__title">Бизнес</div>
+									<div class="card-slider__brands">
+										Toyota Camry, Skoda Superb
+									</div>
+									<div class="card-slider__text">Имеет вместительный багажник.</div>
+									<div class="card-slider__image"><img src="../img/Classes/04.png" alt=""></div>
+									<button class="card-slider__btn _btn" type="button">Забронировать</button>
+								</div>
+							</div>
+							<div class="classes-slider__body">
+								<div class="classes-slider__card card-slider">
+									<div class="card-slider__title">Минивен</div>
+									<div class="card-slider__brands">Hyundai Starex, Mercedes Vito</div>
+									<div class="card-slider__text">Вмещает в себя более 6 пассажиров.Имеет вместительный багажник.</div>
+									<div class="card-slider__image"><img src="../img/Classes/05.png" alt=""></div>
+									<button class="card-slider__btn _btn" type="button">Забронировать</button>
+								</div>
+							</div>
+							<div class="classes-slider__body">
+								<div class="classes-slider__card card-slider">
+									<div class="card-slider__title">Комфорт</div>
+									<div class="card-slider__brands">
+										Skoda Octvia, Chevrolet Cruze
+									</div>
+									<div class="card-slider__text">Имеет вместительный багажник.</div>
+									<div class="card-slider__image"><img src="../img/Classes/03.png" alt=""></div>
+									<button class="card-slider__btn _btn" type="button">Забронировать</button>
+								</div>
+							</div>
+						</div>
+						<div class="classes__control">
+							<div class="classes__arrow-prev"><img src="../img/Classes/arrow_prev.png" alt=""></div>
+							<div class="classes__arrow-next"><img src="../img/Classes/arrow_next.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__bg ibg"><img src="../img/Reviews/bg.jpg" alt=""></div>
+				<div class="reviews__content">
+					<div class="reviews__container _container">
+						<div class="reviews__text-block text-block-reviews">
+							<h2 class="text-block-reviews__title">Отзывы клиентов нашего такси</h2>
+							<div class="text-block-reviews__text">Почитайте отзывы людей, воспользовавшихся нашим такси</div>
+							<div class="text-block-reviews__control">
+								<div class="text-block-reviews__arrow-prev"><img src="../img/Reviews/arrow_prev.png" alt=""></div>
+								<div class="text-block-reviews__arrow-next"><img src="../img/Reviews/arrow_next.png" alt=""></div>
+							</div>
+						</div>
+						<div class="reviews__slider slider-reviews">
+							<div class="slider-reviews__body">
+								<div class="slider-reviews__card">
+									<div class="slider-reviews__image"><img src="../img/Reviews/01.png" alt=""></div>
+									<div class="slider-reviews__name">Петр</div>
+									<div class="slider-reviews__stars-block">
+										<div class="slider-reviews__stars">
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+										</div>
+										<div class="slider-reviews__tariff">Тариф Минивен</div>
+									</div>
+									<div class="slider-reviews__text">Хорошее такси, всегда чистые ухоженные машины и водители адекватные, что сегодня не часто встретишь</div>
+								</div>
+							</div>
+							<div class="slider-reviews__body">
+								<div class="slider-reviews__card">
+									<div class="slider-reviews__image"><img src="../img/Reviews/02.png" alt=""></div>
+									<div class="slider-reviews__name">Валентина</div>
+									<div class="slider-reviews__stars-block">
+										<div class="slider-reviews__stars">
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+										</div>
+										<div class="slider-reviews__tariff">Тариф Комфорт</div>
+									</div>
+									<div class="slider-reviews__text">Хорошее такси, всегда чистые ухоженные машины и водители адекватные, что сегодня не часто встретишь</div>
+								</div>
+							</div>
+							<div class="slider-reviews__body">
+								<div class="slider-reviews__card">
+									<div class="slider-reviews__image"><img src="../img/Reviews/01.png" alt=""></div>
+									<div class="slider-reviews__name">Петр</div>
+									<div class="slider-reviews__stars-block">
+										<div class="slider-reviews__stars">
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+										</div>
+										<div class="slider-reviews__tariff">Тариф Минивен</div>
+									</div>
+									<div class="slider-reviews__text">Хорошее такси, всегда чистые ухоженные машины и водители адекватные, что сегодня не часто встретишь</div>
+								</div>
+							</div>
+							<div class="slider-reviews__body">
+								<div class="slider-reviews__card">
+									<div class="slider-reviews__image"><img src="../img/Reviews/02.png" alt=""></div>
+									<div class="slider-reviews__name">Валентина</div>
+									<div class="slider-reviews__stars-block">
+										<div class="slider-reviews__stars">
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+										</div>
+										<div class="slider-reviews__tariff">Тариф Комфорт</div>
+									</div>
+									<div class="slider-reviews__text">Хорошее такси, всегда чистые ухоженные машины и водители адекватные, что сегодня не часто встретишь</div>
+								</div>
+							</div>
+							<div class="slider-reviews__body">
+								<div class="slider-reviews__card">
+									<div class="slider-reviews__image"><img src="../img/Reviews/01.png" alt=""></div>
+									<div class="slider-reviews__name">Петр</div>
+									<div class="slider-reviews__stars-block">
+										<div class="slider-reviews__stars">
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+										</div>
+										<div class="slider-reviews__tariff">Тариф Минивен</div>
+									</div>
+									<div class="slider-reviews__text">Хорошее такси, всегда чистые ухоженные машины и водители адекватные, что сегодня не часто встретишь</div>
+								</div>
+							</div>
+							<div class="slider-reviews__body">
+								<div class="slider-reviews__card">
+									<div class="slider-reviews__image"><img src="../img/Reviews/02.png" alt=""></div>
+									<div class="slider-reviews__name">Валентина</div>
+									<div class="slider-reviews__stars-block">
+										<div class="slider-reviews__stars">
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+											<div class="slider-reviews__star"><img src="../img/Reviews/star 1.png" alt=""></div>
+										</div>
+										<div class="slider-reviews__tariff">Тариф Комфорт</div>
+									</div>
+									<div class="slider-reviews__text">Хорошее такси, всегда чистые ухоженные машины и водители адекватные, что сегодня не часто встретишь</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="form">
+				<div class="form__container _container">
+					<div class="form__content">
+						<h2 class="form__title">У Вас вопросы?</h2>
+						<div class="form__text">Заполните форму, мы перезвоним вам и ответим на вопросы!</div>
+						<div class="form__items">
+							<div class="form__item">
+								<form action="#" class="form__input">
+									<input type="text" class="input" placeholder="Введите Ваше имя">
+								</form>
+							</div>
+							<div class="form__item">
+								<form action="#" class="form__input">
+									<input type="tel" class="input" placeholder="Введите Ваш телефон">
+								</form>
+							</div>
+							<button class="form__btn _btn" type="button">Заказать звонок</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="spoilers">
+				<div class="spoilers__container _container">
+					<h2 class="spoilers__title">Ч.А.В.О</h2>
+					<div class="spoilers__text">Тут вы можете найти ответы на часто задаваемые вопросы</div>
+					<div class="spoilers-block one">
+						<div class="spoilers-block__item">
+							<div class="spoilers-block__title">Как найти и заказать такси из аэропорта Симферополь?</div>
+							<div class="spoilers-block__text">За сутки и за 12 часов до поездки с Вами свяжется водитель и сообщит марку автомобиля, цвет, государственный номер и скажет как его найти, либо спросит куда к Вам подойти.</div>
+						</div>
+						<div class="spoilers-block__item">
+							<div class="spoilers-block__title">Как проверить, что мой заказ принят?</div>
+							<div class="spoilers-block__text">За сутки и за 12 часов до поездки с Вами свяжется водите ль и сообщит марку автомобиля, цвет, государственный номер и скажет как его найти, либо спросит куда к Вам подойти.</div>
+						</div>
+						<div class="spoilers-block__item">
+							<div class="spoilers-block__title">За какой срок до поездки можно сделать заказ?</div>
+							<div class="spoilers-block__text">За сутки и за 12 часов до поездки с Вами свяжется водитель и сообщит марку автомобиля, цвет, государственный номер и скажет как его найти, либо спросит куда к Вам подойти.</div>
+						</div>
+						<div class="spoilers-block__item">
+							<div class="spoilers-block__title">Как я найду своего водителя?</div>
+							<div class="spoilers-block__text">За сутки и за 12 часов до поездки с Вами свяжется водитель и сообщит марку автомобиля, цвет, государственный номер и скажет как его найти, либо спросит куда к Вам подойти.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="text-block">
+				<div class="text-block__container _container">
+					<h2 class="text-block__title">Официальное такси аэропорта Симферополь</h2>
+					<div class="text-block__text">
+						<ul class="text-block__list">
+							<li>1<span> Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовке и реализации направлений прогрессивного развития.</span></li>
+							<li>2<span> Разнообразный и богатый опыт, постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</span></li>
+							<li>3<span> Товарищи! Начало повседневной работы по формированию позиции способствует подготовке и реализации форм развития. Идейные соображения высшего порядка, а также консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! Дальнейшее развитие различных форм деятельности требуют определения и уточнения систем массового участия.</span></li>
+						</ul>
+						<ul class="text-block__list-2">
+							<li><span>-</span> Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовке и реализации направлений прогрессивного развития.</li>
+							<li><span>-</span> Разнообразный и богатый опыт, постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</li>
+							<li><span>-</span> Товарищи! Начало повседневной работы по формированию позиции способствует подготовки и реализации форм развития. Идейные соображения высшего порядка, а также консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! Дальнейшее развитие различных форм деятельности требуют определения и уточнения систем массового участия.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="foooter__container _container">
+				<div class="footer__title title-footer">
+					<div class="title-footer__sub-title">трансфер</div>
+					<div class="title-footer__title">Симферополь</div>
+					<div class="footer__copy">
+						<p>© Симферополь трансфер, 2022</p>
+						<p>Все права защищены</p>
+					</div>
+				</div>
+				<nav class="footer__menu">
+					<ul class="footer__list">
+						<li><a href="" class="footer__link"><span>О нас</span></a></li>
+						<li><a href="" class="footer__link"><span>Почему мы</span></a></li>
+						<li><a href="" class="footer__link"><span>Тарифы</span></a></li>
+						<li><a href="" class="footer__link"><span>Классы такси</span></a></li>
+						<li><a href="" class="footer__link"><span>Отзывы</span></a></li>
+					</ul>
+				</nav>
+				<div class="footer__phone phone-footer">
+					<div class="phone-footer__text">бесплатно, круглосуточно</div>
+					<a href="tel:89787777272" class="phone-footer__phone">+7 978 777 72 72</a>
+					<div class="phone-footer__address">
+						<p>площадь Воссоединения, 1 г. Симферополь</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<div class="popup__title">Ваш заказ принят!</div>
+				<div class="popup__text">Ваш заказ принят, через несколько минут вам перезвонит оператор</div>
+				<div class="popup__image"><img src="../img/Popup/01.png" alt=""></div>
+				<a href="" class="close-popup _btn" type="button">Вернуться на сайт</a>
+			</div>
+		</div>
+	</div>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="slick.min.js"></script>
+	<script src="Taxi.js"></script>
+</body>
+</html>
